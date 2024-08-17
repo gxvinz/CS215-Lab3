@@ -3,13 +3,41 @@
 //--------------------------------------------------------------------
 // Author: Gavin Crain
 // Date: 1/30/2020
-// Description: Incomes based in hours, pay rate, and taxes.
+// Description: This C++ program first sorts three user-inputted
+// numbers in ascending order using conditional statements. It then uses
+// a switch statement to allow the user to select a type of pepper from a menu,
+// displaying the corresponding Scoville heat unit (SU) for the chosen pepper.
 //---------------
 #include <iostream>
 #include <iomanip>
 using namespace std;
 int main() {
-	int num1, num2, num3;	cout << "Enter number 1: ";	cin >> num1;	cout << "Enter number 2: ";	cin >> num2;	cout << "Enter number 3: ";	cin >> num3;  	if ((num1 >= num2) && (num2 >= num3)) {		cout << "Sorted they are " << num3 << " " << num2 << " " << num1;	}	else if ((num1 >= num3) && (num3 >= num2)) {		cout << "Sorted they are " << num2 << " " << num3 << " " << num1;	}	else if ((num2 >= num1) && (num1 >= num3)) {		cout << "Sorted they are " << num3 << " " << num1 << " " << num2;	}	else if ((num2 >= num3) && (num3 >= num1)) {		cout << "Sorted they are " << num1 << " " << num3 << " " << num2;	}	else if ((num3 >= num1) && (num1 >= num2)) {		cout << "Sorted they are " << num2 << " " << num1 << " " << num3;	}	else if ((num3 >= num2) && (num2 >= num1)) {		cout << "Sorted they are " << num1 << " " << num2 << " " << num3;	}
+	int num1, num2, num3;
+	cout << "Enter number 1: ";
+	cin >> num1;
+	cout << "Enter number 2: ";
+	cin >> num2;
+	cout << "Enter number 3: ";
+	cin >> num3;  
+
+	if ((num1 >= num2) && (num2 >= num3)) {
+		cout << "Sorted they are " << num3 << " " << num2 << " " << num1;
+	}
+	else if ((num1 >= num3) && (num3 >= num2)) {
+		cout << "Sorted they are " << num2 << " " << num3 << " " << num1;
+	}
+	else if ((num2 >= num1) && (num1 >= num3)) {
+		cout << "Sorted they are " << num3 << " " << num1 << " " << num2;
+	}
+	else if ((num2 >= num3) && (num3 >= num1)) {
+		cout << "Sorted they are " << num1 << " " << num3 << " " << num2;
+	}
+	else if ((num3 >= num1) && (num1 >= num2)) {
+		cout << "Sorted they are " << num2 << " " << num1 << " " << num3;
+	}
+	else if ((num3 >= num2) && (num2 >= num1)) {
+		cout << "Sorted they are " << num1 << " " << num2 << " " << num3;
+	}
 	cout << "\n\n";
 
 
